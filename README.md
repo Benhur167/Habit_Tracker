@@ -70,8 +70,3 @@ Once the development server is running, you can open the app on:
 - **Expo Go (Physical Device)**: Scan the QR code using the Expo Go app (Android) or Camera app (iOS).
 - **Web Browser**: Run `npm run web` to start the web version.
 
----
-
-## 🧑‍💻 Architecture & Implementation
-
-For full details on the architectural decisions, streak calculation mathematical rules, AsyncStorage limitations, and recommended database improvements, check out the [Habit Tracker Architecture Brief](./Written_Brief_Maruthi_Benhur.pdf).
