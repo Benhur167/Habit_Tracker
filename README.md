@@ -6,9 +6,11 @@ A beautiful, offline-first mobile application built with **React Native** and **
 
 ## 📸 App Preview
 
-> **Manual Action Required**: Replace this placeholder image with your own emulator/device screenshot after uploading it to your repository.
-
-![Habit Tracker Screenshot](./screenshot.png)
+<p align="center">
+  <img src="./screenshots/homescreen.jpeg" width="30%" alt="Habit Tracker Home Screen" />
+  <img src="./screenshots/create_habit.jpeg" width="30%" alt="Add Habit Screen" />
+  <img src="./screenshots/monitor_streak.jpeg" width="30%" alt="Streak Details Screen" />
+</p>
 
 ---
 
