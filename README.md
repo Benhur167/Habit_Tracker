@@ -1,56 +1,75 @@
-# Welcome to your Expo app 👋
+# Habit Tracker Mobile App ⚡
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful, offline-first mobile application built with **React Native** and **Expo** that helps users form habits, maintain daily routines, and track streaks. Featuring elegant dark-mode glassmorphism, responsive spring animations, and local persistence.
 
-## Get started
+---
 
-1. Install dependencies
+## 📸 App Preview
 
+> **Manual Action Required**: Replace this placeholder image with your own emulator/device screenshot after uploading it to your repository.
+
+![Habit Tracker Screenshot](./screenshot.png)
+
+---
+
+## ✨ Features
+
+- 🎯 **Daily Habit Tracking**: Easily view, check off, and manage your daily routines.
+- ➿ **Streak System**: Smart streak logic that rewards consistency.
+  - **Active Streak**: Accumulates daily as you check off habits.
+  - **Pending Streak**: Maintains your current streak count today until the day ends.
+  - **Broken Streak**: Resets to 0 if a habit is missed for more than a day.
+- 📊 **Progress Dashboard**: Interactive progress ring and cards showing your daily completion percentage.
+- 📅 **Detailed History**: Log calendar view to inspect past completions and track consistency over time.
+- 🎨 **Premium UI/UX**: Built with a sleek Slate 900 dark theme, custom spring micro-animations, and clean typography.
+- 💾 **Local Persistence**: Offline-first storage using `@react-native-async-storage/async-storage` for seamless instant loads.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Expo](https://expo.dev) (v56) with React Native
+- **Routing**: [Expo Router](https://docs.expo.dev/router/introduction/) (File-based navigation)
+- **Icons**: `lucide-react-native`
+- **Animations**: React Native Animated (Spring physics)
+- **Storage**: AsyncStorage (Offline-first data caching)
+
+---
+
+## 🚀 Getting Started
+
+### 📋 Prerequisites
+
+Make sure you have Node.js installed on your development machine.
+
+### ⚙️ Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Benhur167/Habit_Tracker.git
+   cd Habit_Tracker
+   ```
+
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Start the development server**:
    ```bash
-   npx expo start
+   npm run start
    ```
 
-In the output, you'll find options to open the app in a
+### 📱 Running the App
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Once the development server is running, you can open the app on:
+- **Android Emulator**: Press `a` in the terminal.
+- **iOS Simulator**: Press `i` in the terminal.
+- **Expo Go (Physical Device)**: Scan the QR code using the Expo Go app (Android) or Camera app (iOS).
+- **Web Browser**: Run `npm run web` to start the web version.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🧑‍💻 Architecture & Implementation
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+For full details on the architectural decisions, streak calculation mathematical rules, AsyncStorage limitations, and recommended database improvements, check out the [Habit Tracker Architecture Brief](./Written_Brief_Maruthi_Benhur.pdf).
